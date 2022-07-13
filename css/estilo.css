@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#84E1AD;
+    margin: auto;
+}
+#cabecalho{
+    background-image:linear-gradient(to bottom,#39CD7B, #31AD68,#1A5C38);
+    text-align: center;
+    color: white;
+    padding: 20px;
+   
+}
+main{
+    padding-top:10px;
+    width:65%;
+    margin: auto;
+    background-color: white;
+    text-align: justify;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.499);
+}
+main p,h1{
+    margin: auto 25px auto 25px;
+}
+section p,h2{
+    margin: auto 25px auto 25px;
+}
+.fotos{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+.foto02{
+    display: none;
+}
+#video{
+    margin:0;
+    padding: 0;
+    height: 250px;
+    background-color: #1A5C38;
+}
+#cabecalho nav{
+    display: flex;
+    flex-direction:row;
+    align-content: flex-start;
+    align-items: center;
+}
+#cabecalho nav > a{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+#rodape{
+    background-color: #1A5C38;
+    padding: 5px;
+    margin:0;
+}
+#rodape p{
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+@media only screen and (max-width:680px){
+    .fotos{ 
+        display: none;
+    }
+    .foto02{
+        display: block;
+        width: 100%;
+        
+    }
+}
+@media only screen and (min-width:680px){
+    .foto02{
+    
+        
+    }
+}
+
